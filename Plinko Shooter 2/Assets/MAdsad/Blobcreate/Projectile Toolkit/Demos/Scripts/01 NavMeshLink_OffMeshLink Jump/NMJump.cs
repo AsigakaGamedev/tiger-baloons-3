@@ -69,7 +69,7 @@ namespace Blobcreate.ProjectileToolkit.Demo
 				return;
 
 			// Control rotation in air.
-			var lookDir = new Vector3(rigid.velocity.x, 0f, rigid.velocity.z);
+			var lookDir = new Vector3(rigid.linearVelocity.x, 0f, rigid.linearVelocity.z);
 			var lookQua = Quaternion.LookRotation(lookDir);
 			var angle = Quaternion.Angle(transform.rotation, lookQua);
 			transform.rotation = Quaternion.Slerp(transform.rotation, lookQua,
@@ -93,7 +93,7 @@ namespace Blobcreate.ProjectileToolkit.Demo
 			//var hFromX = heightFromEnd;
 
 			rigid.isKinematic = false;
-			rigid.velocity = default;
+			rigid.linearVelocity = default;
 			rigid.AddForce(
 				Projectile.VelocityByHeight(transform.position, targetPos + agent.height * 0.5f * Vector3.up, hFromX),
 				ForceMode.VelocityChange);

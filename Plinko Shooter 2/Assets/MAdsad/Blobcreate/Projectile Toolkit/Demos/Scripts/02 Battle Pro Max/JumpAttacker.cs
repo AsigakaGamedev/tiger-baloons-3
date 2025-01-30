@@ -47,7 +47,7 @@ namespace Blobcreate.ProjectileToolkit.Demo
 			rigid.isKinematic = false;
 			isJumping = true;
 			agent.enabled = false;
-			rigid.velocity = default;
+			rigid.linearVelocity = default;
 			rigid.angularVelocity = default;
 			rigid.collisionDetectionMode = CollisionDetectionMode.Continuous;
 
@@ -152,7 +152,7 @@ namespace Blobcreate.ProjectileToolkit.Demo
 				var obj = collision.gameObject;
 				if (obj.layer == 14)
 				{
-					var v = attackForce * rigid.velocity.normalized;
+					var v = attackForce * rigid.linearVelocity.normalized;
 					v.y = Mathf.Clamp(v.y, 3f, 20f);
 					obj.GetComponent<CharacterMovement>().AddForce(v, true);
 					obj.GetComponent<IHealth>().TakeDamage(damage);

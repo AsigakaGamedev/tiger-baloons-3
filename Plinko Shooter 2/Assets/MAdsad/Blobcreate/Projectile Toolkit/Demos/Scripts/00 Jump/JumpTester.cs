@@ -27,7 +27,7 @@ namespace Blobcreate.ProjectileToolkit.Demo
 		{
 			var hFromX = heightFromEnd;
 
-			rigid.velocity = default;
+			rigid.linearVelocity = default;
 			rigid.AddForce(
 				Projectile.VelocityByHeight(transform.position, targetPos, hFromX),
 				ForceMode.VelocityChange);

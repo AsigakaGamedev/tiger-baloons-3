@@ -203,7 +203,7 @@ namespace Blobcreate.ProjectileToolkit
 			{
 				ghostRigid.position = simulatee.position;
 				ghostRigid.rotation = simulatee.rotation;
-				ghostRigid.velocity = velocity;
+				ghostRigid.linearVelocity = velocity;
 				ghostRigid.angularVelocity = simulatee.angularVelocity;
 			}
 

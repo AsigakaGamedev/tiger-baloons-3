@@ -50,7 +50,7 @@ namespace Blobcreate.ProjectileToolkit.Demo
 			{
 				agent.enabled = false;
 				rigid.isKinematic = false;
-				rigid.velocity = 0.6f * moveSpeed * moveVec;
+				rigid.linearVelocity = 0.6f * moveSpeed * moveVec;
 				rigid.AddForce(jumpForce * Vector3.up, ForceMode.VelocityChange);
 				isJumping = true;
 			}
@@ -80,9 +80,9 @@ namespace Blobcreate.ProjectileToolkit.Demo
 		{
 			if (isJumping)
 			{
-				rigid.velocity -= airMove;
+				rigid.linearVelocity -= airMove;
 				airMove = 0.4f * moveSpeed * airMoveVec;
-				rigid.velocity += airMove;
+				rigid.linearVelocity += airMove;
 			}
 		}
 
