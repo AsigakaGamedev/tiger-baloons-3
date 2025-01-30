@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6047669350097704150}
   - component: {fileID: 5511270834442909605}
   - component: {fileID: 376665863162620430}
+  - component: {fileID: 8355056392679795625}
   m_Layer: 5
   m_Name: Again Btn (1)
   m_TagString: Untagged
@@ -136,6 +137,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadBtn: {fileID: 5511270834442909605}
   sceneIndex: 0
+--- !u!114 &8355056392679795625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123014768011887480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3fcada1139b36439ea2d99414028a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 31a60484453154548802cf244c8dfb2e, type: 3}
 --- !u!1 &367352668251103190
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,6 +163,7 @@ GameObject:
   - component: {fileID: 1160519306681809250}
   - component: {fileID: 2894499342464945180}
   - component: {fileID: 3536960973723708269}
+  - component: {fileID: 1234304892387262263}
   m_Layer: 5
   m_Name: lose
   m_TagString: Untagged
@@ -257,6 +272,19 @@ MonoBehaviour:
   screenName: lose
   cursorMode: 0
   cursorIsVisible: 1
+--- !u!114 &1234304892387262263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367352668251103190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0501d690d1c47ef49b170a2cf69cc011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 9bb380f05e311a444bcdd129ba1d88fe, type: 3}
 --- !u!1 &439045738064784122
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,9 +627,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809689360600576219}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 1
-  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 4
   m_Range: 10
@@ -651,8 +678,12 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!114 &272704598771875386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -689,6 +720,7 @@ GameObject:
   - component: {fileID: 5669376823599160562}
   - component: {fileID: 1344021858141774960}
   - component: {fileID: 7960061887231343091}
+  - component: {fileID: 2602715601908537959}
   m_Layer: 5
   m_Name: Again Btn
   m_TagString: Untagged
@@ -812,6 +844,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadBtn: {fileID: 1344021858141774960}
   sceneIndex: 1
+--- !u!114 &2602715601908537959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237256856738544850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3fcada1139b36439ea2d99414028a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 31a60484453154548802cf244c8dfb2e, type: 3}
 --- !u!1 &2093836175753358583
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,7 +935,7 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
 --- !u!95 &8582636957901790931
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -904,6 +949,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -922,6 +968,7 @@ GameObject:
   - component: {fileID: 3236713639091478229}
   - component: {fileID: 525900229411633017}
   - component: {fileID: 2130285737144630726}
+  - component: {fileID: 9036003094990850585}
   m_Layer: 5
   m_Name: Again Btn
   m_TagString: Untagged
@@ -1045,6 +1092,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadBtn: {fileID: 525900229411633017}
   sceneIndex: 2
+--- !u!114 &9036003094990850585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2186909292169053144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3fcada1139b36439ea2d99414028a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 31a60484453154548802cf244c8dfb2e, type: 3}
 --- !u!1 &2733877811407061485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,15 +1538,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -1830,15 +1892,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -1868,6 +1932,7 @@ GameObject:
   - component: {fileID: 6742230026466271831}
   - component: {fileID: 7427082708278152555}
   - component: {fileID: 2606308520576615682}
+  - component: {fileID: 2742910582812385167}
   m_Layer: 5
   m_Name: Attack Btn (1)
   m_TagString: Untagged
@@ -1977,6 +2042,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2742910582812385167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4478845493634395293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3fcada1139b36439ea2d99414028a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 31a60484453154548802cf244c8dfb2e, type: 3}
 --- !u!1 &4565632650650106855
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,15 +2164,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -2200,13 +2280,14 @@ GameObject:
   - component: {fileID: 742251997207231150}
   - component: {fileID: 745267901807892828}
   - component: {fileID: 2846236155296762879}
+  - component: {fileID: 4662494639757517529}
   m_Layer: 5
   m_Name: win
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8692934381503779092
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2308,6 +2389,19 @@ MonoBehaviour:
   screenName: win
   cursorMode: 0
   cursorIsVisible: 1
+--- !u!114 &4662494639757517529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4702147572216941202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0501d690d1c47ef49b170a2cf69cc011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: c3d5af2682e78dc4cb2d912188a5062c, type: 3}
 --- !u!1 &5119518062412926724
 GameObject:
   m_ObjectHideFlags: 0
@@ -2598,15 +2692,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -2683,6 +2779,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2742,6 +2841,7 @@ GameObject:
   - component: {fileID: 6531967569862676771}
   - component: {fileID: 4146719657577118067}
   - component: {fileID: 459771968333654413}
+  - component: {fileID: 8367526362852508303}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2757,8 +2857,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6598466031142636919}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.08526626, y: -0.91200334, z: 0.24437061, w: 0.31821796}
-  m_LocalPosition: {x: 14.027085, y: 17.396025, z: 20.505592}
+  m_LocalRotation: {x: -0.117202334, y: -0.8612142, z: 0.23076175, w: -0.43740463}
+  m_LocalPosition: {x: -19.899876, y: 13.130001, z: 17.01556}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2901,6 +3001,103 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!82 &8367526362852508303
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6598466031142636919}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7229033911327535792
 GameObject:
   m_ObjectHideFlags: 0
@@ -3010,15 +3207,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -3049,6 +3248,7 @@ GameObject:
   - component: {fileID: 6985347732407651950}
   - component: {fileID: 947391917316009831}
   - component: {fileID: 82179153824794037}
+  - component: {fileID: 4694624255593646093}
   m_Layer: 5
   m_Name: Again Btn (1)
   m_TagString: Untagged
@@ -3172,6 +3372,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadBtn: {fileID: 947391917316009831}
   sceneIndex: 0
+--- !u!114 &4694624255593646093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7399042921242306254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3fcada1139b36439ea2d99414028a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 31a60484453154548802cf244c8dfb2e, type: 3}
 --- !u!1 &7703734077420043026
 GameObject:
   m_ObjectHideFlags: 0
@@ -3245,6 +3458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
   m_AgentTypeID: 0
   m_CollectObjects: 0
   m_Size: {x: 10, y: 10, z: 10}
@@ -3373,15 +3587,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -3411,6 +3627,7 @@ GameObject:
   - component: {fileID: 6433148496628853231}
   - component: {fileID: 2653212717031925938}
   - component: {fileID: 5190402035738239513}
+  - component: {fileID: 2319521958290221021}
   m_Layer: 5
   m_Name: Attack Btn (2)
   m_TagString: Untagged
@@ -3520,6 +3737,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2319521958290221021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8291899471601596662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3fcada1139b36439ea2d99414028a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 31a60484453154548802cf244c8dfb2e, type: 3}
 --- !u!1 &8325394974824824401
 GameObject:
   m_ObjectHideFlags: 0
@@ -3629,15 +3859,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 00000000
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -4131,6 +4363,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4189,6 +4424,7 @@ GameObject:
   - component: {fileID: 1100635639279920932}
   - component: {fileID: 6747463990151989987}
   - component: {fileID: 7328794352940303159}
+  - component: {fileID: 2020139677128715345}
   m_Layer: 5
   m_Name: Attack Btn
   m_TagString: Untagged
@@ -4298,6 +4534,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2020139677128715345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9199648269825347965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3fcada1139b36439ea2d99414028a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 31a60484453154548802cf244c8dfb2e, type: 3}
 --- !u!1001 &59671748489094590
 PrefabInstance:
   m_ObjectHideFlags: 0

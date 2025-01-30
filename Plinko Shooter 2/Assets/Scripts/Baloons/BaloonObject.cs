@@ -8,6 +8,7 @@ public class BaloonObject : MonoBehaviour
     [SerializeField] private HealthController health;
     [SerializeField] private GameObject afterDestroyObj;
     [SerializeField] private ParticleSystem destroyEffect;
+    [SerializeField] private AudioClip audioClip;
 
     private int animalType;
 
@@ -36,6 +37,8 @@ public class BaloonObject : MonoBehaviour
 
     private void OnDie()
     {
+        Camera.main.GetComponent<AudioSource>().clip = audioClip;
+        Camera.main.GetComponent<AudioSource>().Play();
         GameManager.Instance.RemoveBaloons();
         GameObject newObj = Instantiate(afterDestroyObj, transform.position, Quaternion.identity);
 

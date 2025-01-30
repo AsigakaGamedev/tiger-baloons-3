@@ -75,6 +75,7 @@ MonoBehaviour:
     type: 3}
   destroyEffect: {fileID: 4779799753371983172, guid: 054269ac80efa6a40a80841e46db9cfa,
     type: 3}
+  audioClip: {fileID: 8300000, guid: 7f96e288ebd17d74ba3a84d518e54840, type: 3}
 --- !u!114 &8147956656669988337
 MonoBehaviour:
   m_ObjectHideFlags: 0

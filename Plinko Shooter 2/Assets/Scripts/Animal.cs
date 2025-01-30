@@ -7,6 +7,8 @@ using UnityEngine.AI;
 public class Animal : MonoBehaviour
 {
     public HealthController Health;
+    [SerializeField] private AudioClip audioClip;
+    [SerializeField] private AudioSource source;
     public LayerMask Enemies;
     public float Radius;
     public float Damage;
@@ -43,8 +45,6 @@ public class Animal : MonoBehaviour
     {
         type1.SetActive(type == 1);
         type2.SetActive(type == 2);
-        print(type == 1);
-        print(type == 2);
     }
 
     private void Update()
@@ -75,6 +75,8 @@ public class Animal : MonoBehaviour
                 enemy.Health.Damage(Damage);
                 animator.SetTrigger("attack");
                 canAttack = false;
+                source.clip = audioClip;
+                source.Play();
                 Invoke(nameof(ResetCanAttack), AttackDelay);
             }
             else

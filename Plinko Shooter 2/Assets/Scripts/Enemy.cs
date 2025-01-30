@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using static Unity.VisualScripting.Member;
 
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private HealthController health;
+    [SerializeField] private AudioClip audioClip;
+    [SerializeField] private AudioSource source;
 
     public LayerMask Enemies;
     public float Radius;
@@ -57,6 +60,8 @@ public class Enemy : MonoBehaviour
 
             if (Vector3.Distance(transform.position, animal.transform.position) <= 3.5f && canAttack)
             {
+                source.clip = audioClip;
+                source.Play();
                 animal.Health.Damage(Damage);
                 animator.SetTrigger("attack");
                 canAttack = false;
